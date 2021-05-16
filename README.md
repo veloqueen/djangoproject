@@ -6,13 +6,13 @@ create requirements.yaml file with all desired dependencies
 create a .gitignore file
 
 > $ conda env create -f requirements.yml
-   creates a conda env
+creates a conda env
 
 $pip install what-you-want-to-install and it's version
    in case of manuall installations of dependencies, frameworks use pip
 
 > $ conda activate nameofyourprojectorisitenv 
-   this will be advised by terminal itself
+this will be advised by terminal itself
 
 $ django-admin startproject your-wished-name . 
    (dot at the end so that it's created in a directory you're in 

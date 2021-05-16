@@ -5,7 +5,7 @@ START:
 create requirements.yaml file with all desired dependencies 
 create a .gitignore file
 
-> $ conda env create -f requirements.yml
+   * $ conda env create -f requirements.yml
 creates a conda env
 
 $pip install what-you-want-to-install and it's version

@@ -18,20 +18,25 @@ this will be advised by terminal itself
    (dot at the end so that it's created in a directory you're in 
 
     * Add Pycharm interpreter locally:
-File > Settings > Project: xxx  > select env created on previous step
+File > Settings > Project: yourprojectname  > Conda Environment > tick Existing environemnt -> select env created on previous step & apply&ok
 
-add configuration: edit: + python:
+  * Add configuration: edit: + python:
+Name: makemigrations, migrate, runserver
+parameters makemigrations, migrate, runserver (separately copy paste first one and adjust for two remaining) after $
+Script path: the one to manage.py
+parameters makemigrations, migrate, runserver (separately copy paste first one and adjust for two remaining) after $
 
-MAKEMIGRATIONS
-$ python manage.py makemigrations 
 
-MIGRATE
-$ python manage.py migrate
+    - MAKEMIGRATIONS
+    $ python manage.py makemigrations 
 
-RUNSERVER
-$ python manage.py runserver
+    - MIGRATE
+    $ python manage.py migrate
 
-above three are your best friends, need to be run once in the same directory as manage.py
+    - RUNSERVER
+    $ python manage.py runserver
+
+above three commands are your best friends, need to be run once in the same directory as manage.py
 
 if you want a custom user profile, best is to set it up before running migrations for the first time (AUTH_USER_MODEL in settings & more) 
 
@@ -52,4 +57,4 @@ class Your-App_nameConfig(AppConfig):
     
     Other commands that might be needed when setting up Django project: 
     $ conda env list 
-    
+

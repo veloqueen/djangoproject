@@ -14,7 +14,7 @@ $pip install what-you-want-to-install and it's version
 > $ conda activate nameofyourprojectorisitenv 
 this will be advised by terminal itself
 
-$ django-admin startproject your-wished-name . 
+`django-admin startproject your-wished-name . `
    (dot at the end so that it's created in a directory you're in 
 
     * Add Pycharm interpreter locally:
